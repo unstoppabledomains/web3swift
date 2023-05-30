@@ -12,7 +12,6 @@ let package = Package(
   dependencies: [
     .package(url: "https://github.com/attaswift/BigInt.git", from: "5.0.0"),
     .package(url: "https://github.com/mxcl/PromiseKit.git", from: "6.8.4"),
-    .package(url: "https://github.com/daltoniam/Starscream.git", from: "3.1.0"),
     .package(url: "https://github.com/krzyzanowskim/CryptoSwift.git", from: "1.0.0"),
     .package(url: "https://github.com/Boilertalk/secp256k1.swift.git", from: "0.1.1")
     ],
@@ -21,7 +20,7 @@ let package = Package(
     // Targets can depend on other targets in this package, and on products in packages which this package depends on.
     .target(
       name: "web3swift",
-      dependencies: ["BigInt", "secp256k1", "PromiseKit", "Starscream", "CryptoSwift"],
+      dependencies: ["BigInt", "secp256k1", "PromiseKit", "CryptoSwift"],
       exclude: [
         ]),
     .testTarget(
